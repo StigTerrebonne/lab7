@@ -15,9 +15,6 @@ function initializePage() {
 function clickLike(e){
 	e.preventDefault();
 	console.log("made it");
-	gtag('create', 'UA-134624562-1', 'auto');
-	gtag('send', 'event', 'like', 'click');
-	gtag('event', 'click', {
-		event_category: 'like'
-	});
+	ga('create', 'UA-134624562-1', 'auto');
+	ga('send', 'event', 'like', 'click');
 }
